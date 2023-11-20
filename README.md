@@ -1,6 +1,6 @@
 ⚠️В разработке, не протестировано
 
-![licecap](liceap.gif)
+![licecap](https://raw.githubusercontent.com/Sakhnovkrg/Vue3-Yandex-SmartCaptcha/main/licecap.gif)
 
 ## Установка
 NPM:
