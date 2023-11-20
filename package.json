@@ -1,0 +1,23 @@
+{
+    "name": "vue3-yandex-smartcaptcha",
+    "version": "0.0.1",
+    "keywords": [
+        "captcha",
+        "yandex",
+        "smartcaptcha",
+        "vue",
+        "vuejs"
+    ],
+    "bugs": {
+        "url": "https://github.com/Sakhnovkrg/Vue3-Yandex-SmartCaptcha/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sakhnovkrg/Vue3-Yandex-SmartCaptcha"
+    },
+    "license": "MIT",
+    "author": "Sakhnovkrg <sakhnov-krg@ya.ru>",
+    "peerDependencies": {
+        "vue": "^3.3.8"
+    }
+}
