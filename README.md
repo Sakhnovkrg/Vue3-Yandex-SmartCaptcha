@@ -1,5 +1,7 @@
 ⚠️В разработке, не протестировано
 
+![licecap](liceap.gif)
+
 ## Установка
 NPM:
 ```bash
@@ -62,8 +64,9 @@ const token = ref(); // сюда присвоится значение токе�
 
 <template>
   <form>
-    <YSmartCaptcha v-model="token" />
-    <!-- <YSmartCaptcha v-model="token" siteKey="Ключ клиента" /> -->
+    <ClientOnly> <!-- Для Nuxt -->
+      <YSmartCaptcha v-model="token" />
+    </ClientOnly>
     <button :disabled="!token">Submit</button>
   </form>
 
