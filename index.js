@@ -3,7 +3,7 @@ import { h, ref, onMounted, onBeforeUnmount } from 'vue';
 const YSmartCaptcha = {
   install(app, options) {
     app.component('YSmartCaptcha', {
-      props: ['siteKey', 'modelValue'],
+      props: ['siteKey', 'modelValue', 'lang'],
       emits: ['update:modelValue'],
       setup(props, { emit }) {
         const widgetId = ref('captcha-container');
@@ -11,6 +11,10 @@ const YSmartCaptcha = {
 
         if(props.siteKey) {
           options.siteKey = props.siteKey
+        }
+
+        if(props.lang) {
+          options.lang = props.lang
         }
 
         let mo;
@@ -58,7 +62,8 @@ const YSmartCaptcha = {
           style: 'height: 100px;',
           id: this.widgetId,
           class: 'smart-captcha',
-          'data-sitekey': options.siteKey
+          'data-sitekey': options.siteKey,
+          'data-hl': options.lang
         });
       },
     })
