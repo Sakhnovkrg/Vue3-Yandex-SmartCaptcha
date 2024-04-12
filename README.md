@@ -1,5 +1,3 @@
-⚠️В разработке, не протестировано
-
 ![licecap](https://raw.githubusercontent.com/Sakhnovkrg/Vue3-Yandex-SmartCaptcha/main/licecap.gif)
 
 ## Установка
