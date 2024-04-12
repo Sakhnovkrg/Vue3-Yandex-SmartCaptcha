@@ -45,7 +45,7 @@ const YSmartCaptcha = {
         onBeforeUnmount(() => {
           try {
             mo.disconnect();
-            script.delete();
+            script.remove();
           } catch(e) {
             console.log(e)
           }
