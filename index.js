@@ -61,7 +61,6 @@ const YSmartCaptcha = {
         return h('div', {
           style: 'height: 100px;',
           id: this.widgetId,
-          class: 'smart-captcha',
           'data-sitekey': options.siteKey,
           'data-hl': options.lang
         });
