@@ -1,5 +1,3 @@
-⚠️В разработке, не протестировано
-
 ![licecap](https://raw.githubusercontent.com/Sakhnovkrg/Vue3-Yandex-SmartCaptcha/main/licecap.gif)
 
 ## Установка
@@ -24,7 +22,8 @@ import YSmartCaptcha from 'vue3-yandex-smartcaptcha'
 const app = createApp(App)
 
 app.use(YSmartCaptcha, {
-  siteKey: 'Ключ клиента'
+  siteKey: "Ключ клиента",
+  lang: "Язык ('ru' | 'en' | 'be' | 'kk' | 'tt' | 'uk' | 'uz' | 'tr')"
 })
 
 app.mount('#app')
@@ -39,7 +38,8 @@ import YSmartCaptcha from "vue3-yandex-smartcaptcha";
 
 export default defineNuxtPlugin(nuxtApp => {
     nuxtApp.vueApp.use(YSmartCaptcha, {
-        siteKey: "Ключ клиента"
+        siteKey: "Ключ клиента",
+        lang: "Язык ('ru' | 'en' | 'be' | 'kk' | 'tt' | 'uk' | 'uz' | 'tr')"
     })
 })
 ```
