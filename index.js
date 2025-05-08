@@ -55,7 +55,8 @@ const YSmartCaptcha = {
       },
       render() {
         return h('div', {
-          style: 'height: 100px;',
+          style: 'height: 100px; min-width: unset',
+          class: 'smart-captcha',
           id: this.widgetId,
           'data-sitekey': options.siteKey
         });
